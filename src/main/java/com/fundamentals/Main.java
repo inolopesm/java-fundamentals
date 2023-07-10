@@ -7,8 +7,10 @@ public class Main {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Please insert your name:");
     String name = scanner.nextLine();
-    Person person = new Person(name);
-    System.out.println("Hello, " + person.getName() + "!");
+    System.out.println("Please insert your age:");
+    int age = Integer.parseInt(scanner.nextLine());
+    Person person = new Person(name, age);
+    System.out.println("Hello, " + person.getName() + " with age " + person.age + "!");
     scanner.close();
   }
 }
