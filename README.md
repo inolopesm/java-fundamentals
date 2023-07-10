@@ -9,5 +9,5 @@
 
 ```
 mvn package
-java -cp target/java-fundamentals-1.0-SNAPSHOT.jar Main
+java -cp target/java-fundamentals-1.0-SNAPSHOT.jar com.fundamentals.Main
 ```
