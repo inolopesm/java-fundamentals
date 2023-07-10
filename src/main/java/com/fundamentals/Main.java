@@ -13,6 +13,13 @@ public class Main {
       int age = Integer.parseInt(scanner.nextLine());
       Person person = new Person(name, age);
       System.out.println("Hello, " + person.getName() + " with age " + person.age + "!");
+
+      if (age < 18) {
+        System.out.println("You are under age!");
+      } else {
+        System.out.println("You are over eighteen!");
+      }
+
     } catch (NumberFormatException e) {
       System.out.println("Ouch! Invalid number");
     } finally {
